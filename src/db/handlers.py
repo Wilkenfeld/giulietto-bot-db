@@ -10,7 +10,7 @@ def get_real_conf_path():
     from pathlib import Path
 
     real_file_location = os.path.realpath(__file__)
-    conf_path = os.path.join(Path(real_file_location).parent.parent, '.env')
+    conf_path = os.path.join(Path(real_file_location).parent.parent.parent, '.env')
     print(conf_path)
     return conf_path
 
